@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: #FBF9F1;
+}
+
+form {
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 10%;
+    border-radius: 16px;
+    background-color: #92C7CF;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.text-input {
+    padding: 5px;
+    width: 25vw;
+    border-radius: 8px;
+}
