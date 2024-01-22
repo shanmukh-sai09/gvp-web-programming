@@ -63,3 +63,11 @@ a {
     color: #EEEEEE;
     font-size: 1rem;
 }
+
+.message-container {
+    position: absolute;
+    margin: 2% 15% 0px 25%;
+    padding: 10px 20px;
+    background-color: #222831;
+    border-radius: 12px;
+}

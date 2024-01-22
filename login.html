@@ -7,17 +7,19 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        
-        <form>
+        <div class="message-container">
+            <h3 class="message-text">message</h3>
+        </div>
+        <form method="post" id="form-login">
             <h2>login</h2>
             <label>
                 <p>username: </p>
-                <input type="text" placeholder="enter user name" class="text-input">
+                <input type="text" placeholder="enter user name" class="text-input" name="username" required>
             </label>
             <br>
             <label>
                 <p>password: </p>
-                <input type="password" placeholder="enter password" class="text-input">
+                <input type="password" placeholder="enter password" class="text-input" name="password" required>
             </label>
             <br>
             <button type="submit" class="submit-btn">login</button>
@@ -26,6 +28,6 @@
             <br>
             <a href="./registration.html" target="pages">does not have account?</a>
         </form>
-        
+        <script src="./index.js"></script>
     </body>
 </html>
