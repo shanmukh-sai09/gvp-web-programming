@@ -16,7 +16,7 @@ body {
 form {
     padding: 20px 50px;
     display: inline-block;
-    margin-top: 7%;
+    margin-top: 10%;
     border-radius: 16px;
     background-color: #222831;
     text-align: left;
@@ -75,4 +75,13 @@ a {
 
 .message-text {
     display: inline-block;
+}
+
+.cancle-btn {
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: #393E46;
+    margin-left: 10px;
+    color: #EEEEEE;
 }
