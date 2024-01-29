@@ -6,36 +6,40 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <form style="padding: 20px 80px; margin-bottom: 7%;">
+        <div class="message-container">
+            <h3 class="message-text">message</h3>
+            <button class="cancle-btn">X</button>
+        </div>
+        <form style="padding: 20px 80px; margin-bottom: 7%;" name = "registrationForm" id="registration-form" onsubmit=" return validateRegistration()" action="./login.html">
             <h2>registration</h2>
             <label>
                 <p>username: </p>
-                <input type="text" placeholder="enter user name" class="text-input">
+                <input type="text" placeholder="enter user name" class="text-input" name="username" required>
             </label>
             <br>
             <label>
                 <p>password: </p>
-                <input type="password" placeholder="enter password" class="text-input">
+                <input type="password" placeholder="enter password" class="text-input" name="password" required>
             </label>
             <br>
             <label>
                 <p>confirm password: </p>
-                <input type="password" placeholder="enter the password again" class="text-input">
+                <input type="password" placeholder="enter the password again" class="text-input" name="cpassword" required>
             </label>
             <br>
             <label>
                 <p>email-id: </p>
-                <input type="email" placeholder="enter email" class="text-input">
+                <input type="email" placeholder="enter email" class="text-input" name="email" required>
             </label>
             <br>
             <label>
                 <p>mobile number: </p>
-                <input type="number" placeholder="enter mobile number" class="text-input">
+                <input type="number" placeholder="enter mobile number" class="text-input" name="mobile">
             </label>
             <br>
             <label>
                 <p>data of birth: </p>
-                <input type="date">
+                <input type="date" name="dob" required>
             </label>
             <br>
             <label>
@@ -46,10 +50,11 @@
             <br>
             <label>
                 <p>address: </p>
-                <textarea class="text-input"></textarea>
+                <textarea class="text-input" name="address"></textarea>
             </label>
             <br>
             <button type="submit" class="submit-btn">register</button>
         </form>
+        <script src="./index.js"></script>
     </body>
 </html>
