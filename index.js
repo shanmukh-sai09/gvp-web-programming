@@ -24,6 +24,7 @@ function validateLogin() {
         return true;
     }
 
+    window.scrollTo(0, 0);
     return false;
 }
 
@@ -43,30 +44,20 @@ function validateRegistration() {
     const dob = form.dob.value;
 
     if(!usernameRegEx.test(username)) {
-        messageText.innerText = "Invalid username!! username must be aleast 6 characters.";
-        return false;
-    } 
-
-    if(!passwordRgx.test(password)) {
+        messageText.innerText = "Invalid username!! username must be aleast 6 characters and should begin with digits.";
+    } else if(!passwordRgx.test(password)) {
         messageText.innerText = "Invalid password!! password must contain atleast one 0-9, atleast one a-z, atleast one A-Z, atleast one @ and _ and atleast of size 8";
-        return false;
-    }
-
-    if(cpassword !== password) {
+    } else if(cpassword !== password) {
         messageText.innerText = "Confirm password and password must be same";
-        return false;
-    }
-    
-    if(!emailRegEx.test(email)) {
+    } else if(!emailRegEx.test(email)) {
         messageText.innerHTML = "Invalid Email !!";
-        return false;
-    }
-
-    if(!mobileRegEx.test(mobile)) {
+    } else if(!mobileRegEx.test(mobile)) {
         messageText.innerText = "Invalid mobile number !!";
-        return false;
+    } else {
+        messageContainer.innerText = "Registered Successfully";
+        return true;
     }
 
-    messageContainer.innerText = "Registered Successfully";
-    return true;
+    window.scrollTo(0, 0);
+    return false;
 }
