@@ -1,0 +1,9 @@
+<!ELEMENT users (user+)>
+<!ELEMENT user (username, email, dob, mobile, gender)>
+<!ATTLIST user id CDATA #REQUIRED>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+

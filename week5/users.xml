@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<users>
+    <user id="1">
+        <username>abc12345</username>
+        <email>abc@gvpce.ac.in</email>
+        <dob>09-06-2003</dob>
+        <mobile>9876543210</mobile>
+        <gender>male</gender>
+    </user>
+    <user id="2">
+        <username>xyz12345</username>
+        <email>xyz@gvpce.ac.in</email>
+        <dob>09-05-2003</dob>
+        <mobile>8876543210</mobile>
+        <gender>female</gender>
+    </user>
+    <user id="3">
+        <username>opq12345</username>
+        <email>opq@gvpce.ac.in</email>
+        <dob>09-04-2003</dob>
+        <mobile>8886543210</mobile>
+        <gender>female</gender>
+    </user>
+</users>
