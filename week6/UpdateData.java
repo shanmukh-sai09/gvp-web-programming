@@ -6,7 +6,7 @@ public class UpdateData {
         Connection conn = DBConnection.connect();
         Statement st = conn.createStatement();
 
-        String query = "update users set mobile = '9878986756' where username = 'abc'";
+        String query = "update users set mobile = '9878986756' where username = 'xyz'";
         int value = st.executeUpdate(query);
         if(value >= 0) {
             System.out.println("row updated");
