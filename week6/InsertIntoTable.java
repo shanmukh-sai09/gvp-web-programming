@@ -8,13 +8,13 @@ public class InsertIntoTable {
         Statement st = conn.createStatement();
         
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter username: ");
+        System.out.print("Enter username: ");
         String username = sc.nextLine();
-        System.out.println("Enter email: ");
+        System.out.print("Enter email: ");
         String email = sc.nextLine();
-        System.out.println("Enter mobile: ");
+        System.out.print("Enter mobile: ");
         long mobile = sc.nextLong();  
-        System.out.println("Enter DOB: ");
+        System.out.print("Enter DOB: ");
         String dob = sc.next();
         
         sc.close();
